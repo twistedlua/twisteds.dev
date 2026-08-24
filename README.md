@@ -2,7 +2,7 @@
 
 This is my personal portfolio site
 
-[twisteds.dev](https://twisteds.dev)
+[View the live site](https://twistedlua.github.io/twisteds.dev/)
 
 ## About
 

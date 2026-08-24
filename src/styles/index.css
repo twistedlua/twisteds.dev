@@ -483,7 +483,7 @@ ul {
 
 .project-card__media {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--soft);
   border: 1px solid var(--line);
@@ -526,9 +526,22 @@ ul {
 }
 
 .project-card__title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.025em;
+}
+
+.project-card__external {
+  color: var(--accent);
+  font-size: 0.76rem;
+  transition: transform var(--ease);
+}
+
+.project-card:hover .project-card__external {
+  transform: translate(2px, -2px);
 }
 
 .project-card__description {
@@ -539,10 +552,13 @@ ul {
 }
 
 .project-card__metrics {
+  display: grid;
+  gap: 3px;
   grid-column: 2;
   grid-row: 1 / span 2;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 0.75rem;
+  font-weight: 550;
   text-align: right;
 }
 

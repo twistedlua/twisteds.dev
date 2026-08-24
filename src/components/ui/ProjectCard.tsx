@@ -18,7 +18,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
         />
       </div>
       <div className="project-card__body">
-        <h3 className="project-card__title">{project.name}</h3>
+        <h3 className="project-card__title">
+          {project.name}
+          {project.href ? (
+            <span className="project-card__external" aria-hidden="true">
+              ↗
+            </span>
+          ) : null}
+        </h3>
         <p className="project-card__description">{project.description}</p>
         {project.metrics.length > 0 ? (
           <ul className="project-card__metrics" aria-label="Results">
