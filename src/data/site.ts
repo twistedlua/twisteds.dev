@@ -3,8 +3,8 @@ import type { SocialLink } from '../types'
 export const site = {
   name: 'Twisted',
   hero: {
-    headline: 'I make games and follow',
-    headlineEmphasis: 'every rabbit hole.',
+    headline: "I'm always building",
+    rotatingWords: ['games', 'systems', 'ideas', 'businesses'],
     tagline:
       "I'm twisted. I make games and figure out what makes them work, grow, and last. That takes me into production, software, and the business behind them.",
     primaryCta: { label: 'View work', href: '/work' },

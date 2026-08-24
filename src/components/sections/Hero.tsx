@@ -1,5 +1,6 @@
 import { site } from '../../data/site'
 import { Button } from '../ui/Button'
+import { RotatingWord } from '../ui/RotatingWord'
 
 export function Hero() {
   const { hero } = site
@@ -12,9 +13,15 @@ export function Hero() {
           Games, software & creative work
         </div>
         <div className="hero__content">
-          <h1 id="hero-heading" className="hero__headline" data-reveal>
-            {hero.headline}{' '}
-            <em>{hero.headlineEmphasis}</em>
+          <h1
+            id="hero-heading"
+            className="hero__headline"
+            aria-label="I'm always building games, systems, ideas, and businesses."
+            data-reveal
+          >
+            <span aria-hidden="true">
+              {hero.headline} <RotatingWord words={hero.rotatingWords} />
+            </span>
           </h1>
           <div className="hero__aside" data-reveal>
             <p className="hero__tagline">{hero.tagline}</p>
