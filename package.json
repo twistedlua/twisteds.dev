@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc --noEmit && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-icons": "^5.7.0",
     "react-router-dom": "^7.18.2"
   },
   "devDependencies": {

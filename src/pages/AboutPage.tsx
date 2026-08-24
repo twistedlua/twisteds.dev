@@ -7,11 +7,11 @@ export function AboutPage() {
     <>
       <PageIntro
         eyebrow="About"
-        title="Creative work, backed by production thinking."
-        description="I work across Roblox development, game production, software, digital strategy, content, and music."
+        title="Most of what I do starts with games."
+        description="The rest comes from getting curious about everything around them."
       />
       <section className="about-page section">
-        <div className="container about-page__grid">
+        <div className="container about-page__grid" data-reveal>
           <p className="eyebrow">Background</p>
           <div className="about-page__copy">
             {site.about.body.map((paragraph) => (

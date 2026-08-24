@@ -6,7 +6,7 @@ export type Project = {
   imageAlt: string
   tags: string[]
   metrics: string[]
-  href: string
+  href?: string
 }
 
 export type Capability = {
@@ -15,8 +15,11 @@ export type Capability = {
   description: string
 }
 
+export type SocialPlatform = 'x' | 'youtube' | 'discord' | 'roblox' | 'github'
+
 export type SocialLink = {
-  id: string
+  id: SocialPlatform
   label: string
-  href: string
+  handle: string
+  href?: string
 }

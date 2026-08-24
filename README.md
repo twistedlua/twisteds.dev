@@ -1,12 +1,12 @@
 # twisteds.dev
 
-Personal portfolio site for **Twisted**.
+This is my personal portfolio site
 
 [twisteds.dev](https://twisteds.dev)
 
 ## About
 
-A minimal portfolio showcasing work across game development, production, software, and creative digital projects — from Roblox experiences and production tooling to software, content, and music.
+A personal portfolio for games, production, software, content, music, and other things made on the internet.
 
 The site is a static front-end built with React and Vite, deployed on GitHub Pages.
 

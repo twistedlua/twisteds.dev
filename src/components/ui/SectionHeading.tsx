@@ -6,7 +6,7 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ id, title, subtitle }: SectionHeadingProps) {
   return (
-    <header className="section-heading">
+    <header className="section-heading" data-reveal>
       <h2 id={id} className="section-heading__title">
         {title}
       </h2>

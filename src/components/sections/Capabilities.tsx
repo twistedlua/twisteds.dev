@@ -16,7 +16,7 @@ export function Capabilities() {
         />
         <ul className="capabilities__grid">
           {capabilities.map((capability) => (
-            <li key={capability.id} className="capability-card">
+            <li key={capability.id} className="capability-card" data-reveal>
               <h3 className="capability-card__title">{capability.title}</h3>
               <p className="capability-card__description">
                 {capability.description}

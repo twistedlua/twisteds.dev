@@ -1,15 +1,28 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { site, navLinks } from '../../data/site'
 
 export function Header() {
+  const location = useLocation()
+
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   return (
     <header className="site-header">
       <div className="container site-header__inner">
-        <NavLink className="site-header__logo" to="/" aria-label={`${site.name} home`}>
-          <span className="site-header__mark" aria-hidden="true">
-            T
+        <NavLink
+          className="site-header__logo"
+          to="/"
+          aria-label={`${site.name} home`}
+          onClick={handleLogoClick}
+        >
+          <span className="site-header__wordmark" aria-hidden="true">
+            twis<span className="site-header__twist">t</span>ed
+            <span className="site-header__dot">.</span>
           </span>
-          {site.name}
         </NavLink>
         <nav className="site-nav" aria-label="Primary">
           <ul className="site-nav__list">
