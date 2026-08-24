@@ -13,7 +13,6 @@ export const site = {
   about: {
     heading: 'About',
     body: [
-      "I'm twisted. Most of what I do starts with games.",
       'I started with Minecraft videos before moving into Roblox development. Coding games turned into designing them, producing them, working with teams, and learning the business behind them.',
       'I follow whatever catches my interest, so software, AI, content, and music ended up here too. I like figuring out how things work, then making my own.',
     ],
