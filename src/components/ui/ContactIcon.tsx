@@ -1,17 +1,13 @@
 import type { IconType } from 'react-icons'
 import { FaDiscord, FaGithub, FaXTwitter, FaYoutube } from 'react-icons/fa6'
-import { LuMail } from 'react-icons/lu'
 import { SiRoblox } from 'react-icons/si'
 import type { SocialPlatform } from '../../types'
 
-type ContactIconName = 'email' | SocialPlatform
-
 type ContactIconProps = {
-  name: ContactIconName
+  name: SocialPlatform
 }
 
-const icons: Record<ContactIconName, IconType> = {
-  email: LuMail,
+const icons: Record<SocialPlatform, IconType> = {
   x: FaXTwitter,
   youtube: FaYoutube,
   discord: FaDiscord,

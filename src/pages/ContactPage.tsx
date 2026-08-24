@@ -14,17 +14,6 @@ export function ContactPage() {
         <div className="container contact-page__grid" data-reveal>
           <p className="eyebrow">Get in touch</p>
           <div className="contact-page__links">
-            <a
-              className="contact-page__link"
-              href={`mailto:${site.contact.email}`}
-            >
-              <span className="contact-page__platform">
-                <ContactIcon name="email" />
-                <span>Email</span>
-              </span>
-              <strong>{site.contact.email}</strong>
-              <span aria-hidden="true">↗</span>
-            </a>
             {socialLinks.map((link) =>
               link.href ? (
                 <a

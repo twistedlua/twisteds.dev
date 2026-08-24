@@ -6,7 +6,7 @@ export function HomePage() {
   return (
     <>
       <Hero />
-      <SelectedWork limit={3} showAllLink />
+      <SelectedWork limit={2} showAllLink />
       <Capabilities />
     </>
   )

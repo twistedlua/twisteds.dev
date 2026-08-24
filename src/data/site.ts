@@ -13,16 +13,15 @@ export const site = {
   about: {
     heading: 'About',
     body: [
-      "I'm Twisted. Most of what I do starts with games.",
-      'I started making things online through Minecraft videos and editing before moving into Roblox development. Games pulled me beyond code into design, production, LiveOps, teams, and the business behind what gets built.',
-      "I have a habit of following one question until it turns into five. That's how I ended up experimenting with software and AI, keeping up with content, and making instrumental music. They feel less like separate interests and more like different ways of learning how things work and making my own.",
+      "I'm twisted. Most of what I do starts with games.",
+      'I started with Minecraft videos before moving into Roblox development. Coding games turned into designing them, producing them, working with teams, and learning the business behind them.',
+      'I follow whatever catches my interest, so software, AI, content, and music ended up here too. I like figuring out how things work, then making my own.',
     ],
   },
   contact: {
     heading: 'Let’s work together.',
     body:
       "I'm always interested in meeting good people and hearing about interesting games, projects, or ideas. If you think we should talk, reach out.",
-    email: 'hello@twisteds.dev',
   },
   footer: {
     copyright: `© ${new Date().getFullYear()} Twisted`,

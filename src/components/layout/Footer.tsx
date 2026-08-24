@@ -13,7 +13,7 @@ export function Footer() {
             {contact.heading}
           </h2>
           <p className="site-footer__body">{contact.body}</p>
-          <Button href={`mailto:${contact.email}`}>{contact.email}</Button>
+          <Button href="/contact">Get in touch</Button>
         </div>
         <div className="site-footer__meta" data-reveal>
           <nav aria-label="Social links">

@@ -9,8 +9,16 @@ export type Project = {
   href?: string
 }
 
+export type CapabilityId =
+  | 'game-dev'
+  | 'production'
+  | 'software'
+  | 'digital-strategy'
+  | 'content'
+  | 'music'
+
 export type Capability = {
-  id: string
+  id: CapabilityId
   title: string
   description: string
 }
