@@ -6,6 +6,7 @@ export type Project = {
   imageAlt: string
   tags: string[]
   metrics: string[]
+  featured: boolean
   href?: string
 }
 

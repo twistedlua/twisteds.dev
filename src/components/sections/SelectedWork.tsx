@@ -16,7 +16,9 @@ export function SelectedWork({
   title = 'Selected Work',
   subtitle = 'Recent projects across games, production, and software.',
 }: SelectedWorkProps) {
-  const visibleProjects = limit ? projects.slice(0, limit) : projects
+  const visibleProjects = limit
+    ? projects.filter((project) => project.featured).slice(0, limit)
+    : projects
 
   return (
     <section
