@@ -2,16 +2,12 @@ import type { SocialLink } from '../types'
 
 export const site = {
   name: 'Twisted',
-  title: 'Twisted — Game Development, Production & Software',
-  description:
-    'Portfolio of Twisted — game development, production, software, and creative digital work.',
-  url: 'https://twisteds.dev',
   hero: {
     headline: 'Twisted',
     tagline:
       'Building games, shipping products, and creating across development, production, software, and digital work.',
-    primaryCta: { label: 'View Work', href: '#work' },
-    secondaryCta: { label: 'Contact', href: '#contact' },
+    primaryCta: { label: 'View work', href: '/work' },
+    secondaryCta: { label: 'Get in touch', href: '/contact' },
   },
   about: {
     heading: 'About',
@@ -21,7 +17,7 @@ export const site = {
     ],
   },
   contact: {
-    heading: 'Contact',
+    heading: 'Let’s work together.',
     body: 'Open to collaborations, production work, and interesting projects.',
     email: 'hello@twisteds.dev',
   },
@@ -31,10 +27,10 @@ export const site = {
 } as const
 
 export const navLinks = [
-  { label: 'Work', href: '#work' },
-  { label: 'About', href: '#about' },
-  { label: 'Capabilities', href: '#capabilities' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Work', href: '/work' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ] as const
 
 export const socialLinks: SocialLink[] = [

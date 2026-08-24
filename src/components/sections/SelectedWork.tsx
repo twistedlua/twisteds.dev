@@ -1,7 +1,20 @@
 import { projects } from '../../data/projects'
-import { ProjectCard, SectionHeading } from '../ui'
+import { ProjectCard } from '../ui/ProjectCard'
+import { SectionHeading } from '../ui/SectionHeading'
 
-export function SelectedWork() {
+type SelectedWorkProps = {
+  limit?: number
+  title?: string
+  subtitle?: string
+}
+
+export function SelectedWork({
+  limit,
+  title = 'Selected Work',
+  subtitle = 'Recent projects across games, production, and software.',
+}: SelectedWorkProps) {
+  const visibleProjects = limit ? projects.slice(0, limit) : projects
+
   return (
     <section
       id="work"
@@ -11,11 +24,11 @@ export function SelectedWork() {
       <div className="container">
         <SectionHeading
           id="work-heading"
-          title="Selected Work"
-          subtitle="Recent projects across games, production, and software."
+          title={title}
+          subtitle={subtitle}
         />
         <div className="project-grid">
-          {projects.map((project) => (
+          {visibleProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
