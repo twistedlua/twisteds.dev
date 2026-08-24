@@ -8,10 +8,6 @@ export function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <div className="container hero__inner">
-        <div className="hero__status" data-reveal>
-          <span className="status-dot" aria-hidden="true" />
-          Games, software & creative work
-        </div>
         <div className="hero__content">
           <h1
             id="hero-heading"
@@ -33,9 +29,6 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <p className="hero__signature" data-reveal>
-          twisted.dev
-        </p>
       </div>
     </section>
   )

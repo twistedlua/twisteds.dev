@@ -11,7 +11,7 @@ export function WorkPage() {
       />
       <SelectedWork
         title="Projects"
-        subtitle="Development, production, and creative work."
+        subtitle="Games I've built, shipped, and supported."
       />
     </>
   )

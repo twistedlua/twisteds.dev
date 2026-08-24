@@ -35,29 +35,7 @@ export const projects: Project[] = [
       'Weekly updates',
       'Paid contract',
     ],
-    featured: false,
-    href: 'https://www.roblox.com/games/118677256126351/Bomb-Fishing',
-  },
-  {
-    id: 'project-beta',
-    name: 'Software Experiments',
-    description:
-      'Tools and AI experiments built around creator workflows and ideas worth testing.',
-    image: assetPath('placeholders/project-2.svg'),
-    imageAlt: 'Placeholder for upcoming software experiments',
-    tags: ['Software', 'AI', 'Tools'],
-    metrics: [],
     featured: true,
-  },
-  {
-    id: 'project-gamma',
-    name: 'Content & Music',
-    description:
-      'Video, editing, and instrumental music created alongside the main game work.',
-    image: assetPath('placeholders/project-3.svg'),
-    imageAlt: 'Placeholder for upcoming content and music',
-    tags: ['Content', 'Editing', 'Music'],
-    metrics: [],
-    featured: false,
+    href: 'https://www.roblox.com/games/118677256126351/Bomb-Fishing',
   },
 ]
