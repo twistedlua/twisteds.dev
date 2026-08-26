@@ -8,13 +8,13 @@ export const projects: Project[] = [
     id: 'hatch-and-feed-animals',
     name: 'Hatch and Feed Animals!',
     description:
-      'I designed the idea, built and scripted the full game in two weeks, then shipped it with paid ads. It peaked at 2.56K concurrent players, and I sold a partial stake at its peak for five figures.',
+      'I designed the idea, built and scripted the full game in two weeks, then shipped it with paid ads. It peaked at 2.06K concurrent players, and I sold a partial stake at its peak for five figures.',
     image: assetPath('projects/hatch-and-feed-animals.png'),
     imageAlt: 'Hatch and Feed Animals Roblox game thumbnail',
     tags: ['Game Design', 'Luau', 'Production', 'Launch'],
     metrics: [
       '1.38M+ visits',
-      '2.56K peak CCU',
+      '2.06K peak CCU',
       'Built in 2 weeks',
       '5-figure partial exit',
     ],
