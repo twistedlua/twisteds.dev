@@ -4,7 +4,7 @@ import { site, navLinks } from '../../data/site'
 export function Header() {
   const location = useLocation()
 
-  const handleLogoClick = () => {
+  const handleHomeClick = () => {
     if (location.pathname === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
@@ -17,7 +17,7 @@ export function Header() {
           className="site-header__logo"
           to="/"
           aria-label={`${site.name} home`}
-          onClick={handleLogoClick}
+          onClick={handleHomeClick}
         >
           <span className="site-header__wordmark" aria-hidden="true">
             twis<span className="site-header__twist">t</span>ed
@@ -33,6 +33,7 @@ export function Header() {
                     `site-nav__link${isActive ? ' site-nav__link--active' : ''}`
                   }
                   to={link.href}
+                  onClick={link.href === '/' ? handleHomeClick : undefined}
                 >
                   {link.label}
                 </NavLink>

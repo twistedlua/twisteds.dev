@@ -455,6 +455,61 @@ ul {
   margin-top: 26px;
 }
 
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  opacity: 0.6;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  transition:
+    opacity 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero__scroll-indicator:hover {
+  opacity: 1;
+}
+
+.hero__scroll-indicator.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(8px);
+}
+
+.hero__scroll-indicator.is-hidden .hero__scroll-arrow {
+  animation-play-state: paused;
+}
+
+.hero__scroll-arrow {
+  width: 16px;
+  color: var(--accent);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+  animation: scroll-indicator 2.2s ease-in-out infinite;
+}
+
+@keyframes scroll-indicator {
+  0%,
+  100% {
+    transform: translateY(-1px);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -1171,6 +1226,10 @@ ul {
   [data-reveal] {
     opacity: 1;
     transform: none;
+  }
+
+  .hero__scroll-arrow {
+    animation: none;
   }
 
 }

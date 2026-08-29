@@ -1,9 +1,24 @@
+import { useEffect, useState } from 'react'
 import { site } from '../../data/site'
 import { Button } from '../ui/Button'
 import { RotatingWord } from '../ui/RotatingWord'
 
 export function Hero() {
   const { hero } = site
+  const [isScrollIndicatorVisible, setIsScrollIndicatorVisible] = useState(
+    () => window.scrollY < 40,
+  )
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrollIndicatorVisible(window.scrollY < 40)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <section className="hero" aria-labelledby="hero-heading">
@@ -29,6 +44,22 @@ export function Hero() {
             </div>
           </div>
         </div>
+        <a
+          className={`hero__scroll-indicator${isScrollIndicatorVisible ? '' : ' is-hidden'}`}
+          href="#work"
+          aria-label="Scroll to selected work"
+          aria-hidden={!isScrollIndicatorVisible}
+          tabIndex={isScrollIndicatorVisible ? undefined : -1}
+        >
+          <span>Scroll</span>
+          <svg
+            className="hero__scroll-arrow"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path d="m3.5 5.75 4.5 4.5 4.5-4.5" />
+          </svg>
+        </a>
       </div>
     </section>
   )
