@@ -5,6 +5,40 @@ const assetPath = (filePath: string) =>
 
 export const projects: Project[] = [
   {
+    id: 'escape-logs-for-animals',
+    name: 'Escape Logs for Animals!',
+    description:
+      'I ideated, scripted, and shipped the full game in 72 hours for a fast-moving trend, building the map and shaping its gameplay, feedback loops, and monetization. It has held roughly 400–500 organic concurrent players and is tracking toward about $4K in monthly revenue.',
+    image: assetPath('projects/escape-logs-for-animals.png'),
+    imageAlt: 'Escape Logs for Animals Roblox game thumbnail',
+    tags: ['Game Design', 'Luau', 'Monetization', 'Launch'],
+    metrics: [
+      '400–500 organic CCU',
+      'Built in 72 hours',
+      '~$4K/mo projected',
+      'Full game build',
+    ],
+    featured: false,
+    href: 'https://www.roblox.com/games/128014543028490/Escape-Logs-for-Animals',
+  },
+  {
+    id: 'save-animals',
+    name: 'Save Animals!',
+    description:
+      'After its launch spike faded, I joined for partial equity to rebuild the game for long-term performance. I designed the update roadmap, then developed and shipped updates alongside the owner, reviving it into a consistent revenue-generating game.',
+    image: assetPath('projects/save-animals.png'),
+    imageAlt: 'Save Animals Roblox game thumbnail',
+    tags: ['LiveOps', 'Game Design', 'Production', 'Development'],
+    metrics: [
+      '20K peak CCU',
+      'LiveOps turnaround',
+      'Update roadmap',
+      'Partial equity',
+    ],
+    featured: true,
+    href: 'https://www.roblox.com/games/123822115505881/Save-Animals',
+  },
+  {
     id: 'hatch-and-feed-animals',
     name: 'Hatch and Feed Animals!',
     description:
@@ -35,7 +69,7 @@ export const projects: Project[] = [
       'Weekly updates',
       'Paid contract',
     ],
-    featured: true,
+    featured: false,
     href: 'https://www.roblox.com/games/118677256126351/Bomb-Fishing',
   },
 ]
