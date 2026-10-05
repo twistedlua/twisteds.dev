@@ -5,6 +5,18 @@ const assetPath = (filePath: string) =>
 
 export const projects: Project[] = [
   {
+    id: 'build-a-bridge-for-animals',
+    name: 'Build a Bridge for Animals!',
+    description:
+      'I reskinned an existing game for a partial stake and designed and optimized its monetization. It reached a peak of 500 concurrent players.',
+    image: assetPath('projects/build-a-bridge-for-animals.png'),
+    imageAlt: 'Build a Bridge for Animals Roblox game thumbnail',
+    tags: ['Reskin', 'Game Design', 'Monetization', 'Roblox'],
+    metrics: ['500 peak CCU', 'Partial stake', 'Monetization optimization'],
+    featured: false,
+    href: 'https://www.roblox.com/games/134245912372996/Build-a-Bridge-for-Animals',
+  },
+  {
     id: 'escape-logs-for-animals',
     name: 'Escape Logs for Animals!',
     description:
