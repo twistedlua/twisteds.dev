@@ -8,7 +8,7 @@ export const projects: Project[] = [
     id: 'build-a-bridge-for-animals',
     name: 'Build a Bridge for Animals!',
     description:
-      'I reskinned an existing game for a partial stake and designed and optimized its monetization. It now averages 2K concurrent players.',
+      'I reskinned an existing game for a partial stake and designed and optimized its monetization. It averaged 2K concurrent players during its lifespan.',
     image: assetPath('projects/build-a-bridge-for-animals.png'),
     imageAlt: 'Build a Bridge for Animals Roblox game thumbnail',
     tags: ['Reskin', 'Game Design', 'Monetization', 'Roblox'],
