@@ -14,7 +14,7 @@ export const projects: Project[] = [
     tags: ['Monetization', 'UI', 'Development', 'Roblox'],
     metrics: [
       '1.5K average CCU',
-      'Mid-5-figure offer (unrealized)',
+      'Mid-5-figure offer',
       'Partial equity',
     ],
     featured: true,
