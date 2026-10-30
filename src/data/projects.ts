@@ -8,7 +8,7 @@ export const projects: Project[] = [
     id: 'grab-and-decorate',
     name: 'Grab and Decorate',
     description:
-      'I worked on monetization and UI and provided broader development support while holding partial equity in the game. It averaged 1.5K concurrent players. An offer valued the game in the mid-five figures, but was not accepted.',
+      'I worked on monetization and UI and provided broader development support while holding partial equity in the game. It averaged 1.5K concurrent players.',
     image: assetPath('projects/grab-and-decorate.png'),
     imageAlt: 'Grab and Decorate Roblox game thumbnail',
     tags: ['Monetization', 'UI', 'Development', 'Roblox'],
