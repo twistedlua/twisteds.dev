@@ -8,11 +8,11 @@ export const projects: Project[] = [
     id: 'grab-and-decorate',
     name: 'Grab and Decorate',
     description:
-      'I worked on monetization and UI and provided broader development support while holding partial equity in the game.',
+      'I worked on monetization and UI and provided broader development support while holding partial equity in the game. It averaged 1.5K concurrent players.',
     image: assetPath('projects/grab-and-decorate.png'),
     imageAlt: 'Grab and Decorate Roblox game thumbnail',
     tags: ['Monetization', 'UI', 'Development', 'Roblox'],
-    metrics: ['Partial equity'],
+    metrics: ['1.5K average CCU', 'Partial equity'],
     featured: true,
     href: 'https://www.roblox.com/games/105273282801541/Grab-and-Decorate',
   },
